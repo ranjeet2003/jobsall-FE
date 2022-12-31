@@ -42,18 +42,18 @@ export default function Home() {
           <div className="jobCardContainer">
             <Grid container className="boxesWrapper">
               <Grid item xs={12} sm={6} lg={3}>
-                <Paper elevation={3} className="homeCategoryBox">
-                  <span onClick={() => router.push("/post/government/")}>
-                    All Government Jobs
-                  </span>
-                </Paper>
+                <span onClick={() => router.push("/post/government/")}>
+                  <Paper elevation={3} className="homeCategoryBox">
+                      All Government Jobs
+                  </Paper>
+                </span>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
-                <Paper elevation={3} className="homeCategoryBox">
-                  <span onClick={() => router.push("/post/private/")}>
-                    All Private Jobs
-                  </span>
-                </Paper>
+                <span onClick={() => router.push("/post/private/")}>
+                  <Paper elevation={3} className="homeCategoryBox">
+                      All Private Jobs
+                  </Paper>
+                </span>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <Paper elevation={3} className="homeCategoryBox">
