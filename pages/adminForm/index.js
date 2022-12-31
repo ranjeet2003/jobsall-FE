@@ -27,7 +27,7 @@ export default function Home() {
     };
 
     const response = await fetch(
-      `https://jobsall.herokuapp.com/api/${callApiFor[formState]}/postjob`,
+      `https://jobsall.onrender.com/api/${callApiFor[formState]}/postjob`,
       {
         method: "POST",
         body: JSON.stringify(data),
