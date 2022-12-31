@@ -1,0 +1,92 @@
+@import url("https://use.typekit.net/yql2hfv.css");
+
+$blue-variant: #463ba8;
+$default-btn-color: #ff7f32;
+$outline-btn-color: #212975;
+
+.homeContainer {
+  .heading {
+    font-weight: 600;
+  }
+}
+
+.jobCardContainer {
+  .boxesWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .homeCategoryBox {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      color: rgb(59, 59, 59);
+      &:hover {
+        color: black;
+        font-size: 21px;
+      }
+    }
+    .MuiPaper-root {
+      &:hover {
+        box-shadow: 0px 6px 6px -3px rgb(0 0 0 / 20%),
+          0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+      }
+    }
+    .div-2-list {
+      padding: 0px 15px 5px 0px;
+    }
+    .homeBox {
+      flex: 1;
+      margin: 10px;
+      .box .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 15px;
+        color: #ffffff;
+        position: relative;
+        min-height: 40px;
+        margin: 0;
+        background: #ffa502;
+        background-image: -webkit-linear-gradient(
+          -29deg,
+          #c50d0c 0,
+          #125fb6 100%
+        );
+      }
+      li {
+        padding: 5px 0px;
+        cursor: pointer;
+        a {
+          display: block;
+          padding: 5px 0px;
+          color: rgb(5, 24, 193);
+          &:hover,
+          &:focus {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .viewMoreBtn {
+        color: rgb(107, 24, 171);
+        font-style: italic;
+
+        &::before {
+          content: "...";
+        }
+        &:hover {
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      }
+      .btnCenter {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
