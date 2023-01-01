@@ -7,11 +7,12 @@ import { PostContext } from "../context/PostContext";
 import Loading from "../components/Loading";
 
 export default function Home() {
-  const { governmentData, loading, privateData } = useContext(PostContext);
+  const { governmentData, loading, privateData, internData } = useContext(PostContext);
   const router = useRouter();
 
   const firstFiveGovPosts = governmentData.slice(0, 5);
   const firstFivePvtPosts = privateData.slice(0, 5);
+  const firstFiveInternPosts = internData.slice(0, 5);
 
   const dummyData = [
     { id: 1, postName: "Amazon" },
@@ -56,9 +57,11 @@ export default function Home() {
                 </span>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
-                <Paper elevation={3} className="homeCategoryBox">
-                  <span>All Interships Jobs</span>
-                </Paper>
+                <span onClick={() => router.push("/post/internship/")}>
+                  <Paper elevation={3} className="homeCategoryBox">
+                    <span>All Interships Jobs</span>
+                  </Paper>
+                </span>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <Paper elevation={3} className="homeCategoryBox">
@@ -86,8 +89,8 @@ export default function Home() {
               <Grid item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Internship Jobs"
-                  allPosts={dummyData}
-                  btnRoute="/post/intership"
+                  allPosts={firstFiveInternPosts}
+                  btnRoute="/post/internship"
                 />
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>

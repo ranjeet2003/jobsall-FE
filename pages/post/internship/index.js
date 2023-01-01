@@ -1,18 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Container, Grid, Paper } from "@mui/material";
 import JobCards from "../../../components/JobCards";
+import { PostContext } from "../../../context/PostContext";
 import Head from "next/head";
+import Loading from "../../../components/Loading";
+
 
 const index = () => {
-  // const { governmentData, loading } = useContext(PostContext);
-  const dummyData = [
-    { id: 1, postName: "Amazon" },
-    { id: 2, postName: "Microsoft" },
-    { id: 3, postName: "Walmart" },
-    { id: 4, postName: "Google" },
-    { id: 1, postName: "Apple" },
-  ];
-
+  const { internData, loading } = useContext(PostContext);
   return (
     <Container className="">
       <Head>
@@ -21,20 +16,24 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <>
-        <h2>All Internship Job Postings are here</h2>
-        <div className="jobCardContainer">
-          <Grid container className="boxesWrapper">
-            <Grid item xs={12} sm={6}>
-              <JobCards
-                title="Internship Jobs"
-                allPosts={dummyData}
-                btnRoute="/post/intership"
-              />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <h3 className="h3AllPosts">All Open Intership Jobs Postings are here</h3>
+          <div className="jobCardContainer">
+            <Grid container className="boxesWrapper">
+              <Grid item xs={12} sm={6}>
+                <JobCards
+                  title="All Internship Jobs"
+                  allPosts={internData}
+                  btnRoute="/post/internship"
+                />
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-      </>
+          </div>
+        </>
+      )}
     </Container>
   );
 };
