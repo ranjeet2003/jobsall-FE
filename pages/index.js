@@ -59,7 +59,7 @@ export default function Home() {
               <Grid item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/internship/")}>
                   <Paper elevation={3} className="homeCategoryBox">
-                    <span>All Interships Jobs</span>
+                    <span>All internships Jobs</span>
                   </Paper>
                 </span>
               </Grid>

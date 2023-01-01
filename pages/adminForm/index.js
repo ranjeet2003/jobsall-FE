@@ -24,6 +24,7 @@ export default function Home() {
     const callApiFor = {
       government: "govt",
       private: "pvt",
+      internship: "intern"
     };
 
     const response = await fetch(
@@ -73,7 +74,7 @@ export default function Home() {
           >
             <option value="government">Government</option>
             <option value="private">Private</option>
-            <option value="intership">Intership</option>
+            <option value="internship">internship</option>
             <option value="freelancing">Freelancing</option>
           </select>
         </div>

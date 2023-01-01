@@ -20,7 +20,7 @@ const index = () => {
         <Loading />
       ) : (
         <>
-          <h3 className="h3AllPosts">All Open Intership Jobs Postings are here</h3>
+          <h3 className="h3AllPosts">All Open internship Jobs Postings are here</h3>
           <div className="jobCardContainer">
             <Grid container className="boxesWrapper">
               <Grid item xs={12} sm={6}>
