@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { Container } from "@mui/material";
-
+import FUT from '../../../components/follow-telegram'
 const PostsPage = () => {
   const [post, setPost] = useState({});
   const router = useRouter();
@@ -63,6 +63,7 @@ const PostsPage = () => {
           </tr>
         </tbody>
       </table>
+      <FUT />
     </Container>
   );
 };
