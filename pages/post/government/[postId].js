@@ -29,9 +29,9 @@ const PostsPage = () => {
               <strong>Post Name</strong>
             </td>
             <td>
-              <a href="https://www.fresherslive.com/search-jobs/role/inspector-jobs">
+              
                 {post?.postName}
-              </a>
+              
             </td>
           </tr>
           <tr>
