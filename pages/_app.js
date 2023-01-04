@@ -4,6 +4,7 @@ import "../styles/Home.scss";
 import "../styles/AdminForm.scss";
 import "../styles/singlePost.scss";
 import "../styles/loader.scss";
+import "../styles/Footer.scss";
 import Layout from "../components/layout";
 import Context from "../context/PostContext";
 
