@@ -15,11 +15,39 @@ export default function Home() {
   const firstFiveInternPosts = internData.slice(0, 5);
 
   const dummyData = [
-    { id: 1, postName: "Amazon" },
-    { id: 2, postName: "Microsoft" },
-    { id: 3, postName: "Walmart" },
-    { id: 4, postName: "Google" },
-    { id: 1, postName: "Apple" },
+    { id: 1, postName: "Amazon Hiring for Freelancing Basis" },
+    { id: 2, postName: "Microsoft Hiring for Freelancing Basis" },
+    { id: 3, postName: "Walmart Hiring for Freelancing Basis" },
+    { id: 4, postName: "Google Hiring for Freelancing Basis" },
+    { id: 1, postName: "Apple Hiring for Freelancing Basis" },
+  ];
+  const importantLinks = [
+    { id: 1, postName: "Download Your Adhar Card" },
+    { id: 2, postName: "Download Your PAN Card" },
+    { id: 3, postName: "Resize Image" },
+    { id: 4, postName: "Convert Image to PDF" },
+    { id: 1, postName: "Image size reducer/compressor" },
+  ];
+  const scholarships = [
+    { id: 1, postName: "UP Scholarship Online Form 2022" },
+    { id: 2, postName: "NVS Class 6th Admission Online Form 2023" },
+    { id: 3, postName: "NTA JEE-MAIN Online Form 2023" },
+    { id: 4, postName: "SWD UP IAS / PCS Pre 2023 Free Coaching Online Form" },
+    { id: 1, postName: "Allahabad University PG, LLB, Other Course Online Counseling 2022" },
+  ];
+  const resultData = [
+    { id: 1, postName: "UP IAS / PCS Free Coaching Result 2023" },
+    { id: 2, postName: "SBI Clerk 2022 Pre Exam Result" },
+    { id: 3, postName: "NMP ESB Group 5 Paramedical and Nursing Post Result 2023" },
+    { id: 4, postName: "UPSSSC Junior Assistant 2016 Final Result with Department Name" },
+    { id: 1, postName: "UPPSC 2023 Exam Calendar" },
+  ];
+  const answerKeys = [
+    { id: 1, postName: "UPNHM Various 17000+ Post Answer Key" },
+    { id: 2, postName: "UPRVUNL TG II Answer Key 2022" },
+    { id: 3, postName: "UPRVUNL JE Civil, Pharmacist Answer Key 2022" },
+    { id: 4, postName: "UPPCL Computer Assistant Answer Key 2022" },
+    { id: 1, postName: "NVS PGT Answer Key 2022" },
   ];
 
   return (
@@ -98,6 +126,34 @@ export default function Home() {
                   title="Freelancing Jobs"
                   allPosts={dummyData}
                   btnRoute="/post/freelancing"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+                <JobCards
+                  title="Important Links"
+                  allPosts={importantLinks}
+                  btnRoute="/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+                <JobCards
+                  title="Scholarships"
+                  allPosts={scholarships}
+                  btnRoute="/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+                <JobCards
+                  title="Results"
+                  allPosts={resultData}
+                  btnRoute="/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={3}>
+                <JobCards
+                  title="Answer Keys"
+                  allPosts={answerKeys}
+                  btnRoute="/"
                 />
               </Grid>
             </Grid>
