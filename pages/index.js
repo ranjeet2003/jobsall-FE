@@ -7,13 +7,14 @@ import { PostContext } from "../context/PostContext";
 import Loading from "../components/Loading";
 
 export default function Home() {
-  const { governmentData, loading, privateData, internData, resultData } = useContext(PostContext);
+  const { governmentData, loading, privateData, internData, resultData, answerKeyData } = useContext(PostContext);
   const router = useRouter();
 
   const firstFiveGovPosts = governmentData.slice(0, 5);
   const firstFivePvtPosts = privateData.slice(0, 5);
   const firstFiveInternPosts = internData.slice(0, 5);
   const firstFiveResultPosts = resultData.slice(0,5);
+  const firstFiveAnswerKeyPosts = answerKeyData.slice(0,5);
 
   const dummyData = [
     { id: 1, postName: "Amazon Hiring for Freelancing Basis" },
@@ -36,21 +37,7 @@ export default function Home() {
     { id: 4, postName: "SWD UP IAS / PCS Pre 2023 Free Coaching Online Form" },
     { id: 1, postName: "Allahabad University PG, LLB, Other Course Online Counseling 2022" },
   ];
-  // const resultData = [
-  //   { id: 1, postName: "UP IAS / PCS Free Coaching Result 2023" },
-  //   { id: 2, postName: "SBI Clerk 2022 Pre Exam Result" },
-  //   { id: 3, postName: "NMP ESB Group 5 Paramedical and Nursing Post Result 2023" },
-  //   { id: 4, postName: "UPSSSC Junior Assistant 2016 Final Result with Department Name" },
-  //   { id: 1, postName: "UPPSC 2023 Exam Calendar" },
-  // ];
-  const answerKeys = [
-    { id: 1, postName: "UPNHM Various 17000+ Post Answer Key" },
-    { id: 2, postName: "UPRVUNL TG II Answer Key 2022" },
-    { id: 3, postName: "UPRVUNL JE Civil, Pharmacist Answer Key 2022" },
-    { id: 4, postName: "UPPCL Computer Assistant Answer Key 2022" },
-    { id: 1, postName: "NVS PGT Answer Key 2022" },
-  ];
-
+ 
   return (
     <Container className="homeContainer">
       <Head>
@@ -153,8 +140,8 @@ export default function Home() {
               <Grid item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Answer Keys"
-                  allPosts={answerKeys}
-                  btnRoute="/"
+                  allPosts={firstFiveAnswerKeyPosts}
+                  btnRoute="/post/answerKeys"
                 />
               </Grid>
             </Grid>

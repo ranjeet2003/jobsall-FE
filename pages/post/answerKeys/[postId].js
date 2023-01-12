@@ -31,40 +31,48 @@ const PostsPage = () => {
             <td>
               <strong>Post Name</strong>
             </td>
-            <td>
-              
-                {post?.postName}
-              
-            </td>
+            <td>{post?.postName}</td>
           </tr>
-          <tr>
-            <td>
-              <strong>Batch</strong>
-            </td>
-            <td>{post?.batch}</td>
-          </tr>
+          {post?.batch ? (
+            <tr>
+              <td>
+                <strong>Batch</strong>
+              </td>
+              <td>{post?.batch}</td>
+            </tr>
+          ) : (
+            ""
+          )}
+
+          {post?.location ? (
+            <tr>
+              <td>
+                <strong>Location</strong>
+              </td>
+              <td>{post?.location}</td>
+            </tr>
+          ) : (
+            ""
+          )}
 
           <tr>
             <td>
-              <strong>Location</strong>
-            </td>
-            <td>{post?.location}</td>
-          </tr>
-
-          <tr>
-            <td>
-              <strong> Apply link</strong>
+              <strong>Download Answer Key</strong>
             </td>
             <td>
-              <a href={post?.applyLink}>{post?.applyLink}</a>
+              <a href={post?.applyLink}>Click Here</a>
             </td>
           </tr>
-          <tr>
-            <td>
-              <strong>CTC </strong>
-            </td>
-            <td>{post?.ctc}</td>
-          </tr>
+          {post?.ctc ? (
+            <tr>
+              <td>
+                <strong>CTC </strong>
+              </td>
+              <td>{post?.ctc}</td>
+            </tr>
+          ) : (
+            ""
+          )}
         </tbody>
       </table>
       <FUT />

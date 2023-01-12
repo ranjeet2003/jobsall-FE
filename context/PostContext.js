@@ -4,7 +4,8 @@ import {
   API_GET_GOVERNMENT_POSTS,
   API_GET_PRIVATE_POSTS,
   API_GET_INTERNSHIP_POSTS,
-  API_GET_RESULT_POSTS
+  API_GET_RESULT_POSTS,
+  API_GET_ANSWERKEY_POSTS
 } from "../service/api";
 
 export const PostContext = React.createContext();
@@ -15,6 +16,7 @@ const Context = ({ children }) => {
   const [privateData, setPrivateData] = useState([]);
   const [internData, setinternData] = useState([]);
   const [resultData, setResultData] = useState([]);
+  const [answerKeyData, setanswerKeyData] = useState([]);
 
   const fetchGovernanceData = async () => {
     try {
@@ -56,12 +58,23 @@ const Context = ({ children }) => {
       alert(err);
     }
   };
+  const fetchAnswerKeytData = async () => {
+    try {
+      const response = await axios.get(API_GET_ANSWERKEY_POSTS);
+      const allAnswerKeyPosts = response.data.data;
+      setanswerKeyData(allAnswerKeyPosts);
+      setLoading(false);
+    } catch (err) {
+      alert(err);
+    }
+  };
 
   useEffect(() => {
     fetchGovernanceData();
     fetchPrivateData();
     fetchInternData();
     fetchResultData();
+    fetchAnswerKeytData();
   }, []);
 
   return (
@@ -71,7 +84,8 @@ const Context = ({ children }) => {
         governmentData,
         privateData,
         internData,
-        resultData
+        resultData,
+        answerKeyData
       }}
     >
       {children}

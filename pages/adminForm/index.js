@@ -25,7 +25,8 @@ export default function Home() {
       government: "govt",
       private: "pvt",
       internship: "intern",
-      result: "result"
+      result: "result",
+      answerkey: "answerkey"
     };
 
     const response = await fetch(
@@ -77,7 +78,8 @@ export default function Home() {
             <option value="private">Private</option>
             <option value="internship">internship</option>
             <option value="freelancing">Freelancing</option>
-            <option value="freelancing">Result</option>
+            <option value="result">Result</option>
+            <option value="answerkey">Answer Key</option>
           </select>
         </div>
         <Paper className="form" elevation={1}>
