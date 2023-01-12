@@ -2,18 +2,11 @@ import React, { useContext, useState } from "react";
 import { Container, Grid, Paper } from "@mui/material";
 import JobCards from "../../../components/JobCards";
 import Head from "next/head";
-
+import { PostContext } from "../../../context/PostContext";
+import Loading from "../../../components/Loading";
 const index = () => {
   // const { governmentData, loading } = useContext(PostContext);
   const { answerKeyData, loading } = useContext(PostContext);
-
-  const dummyData = [
-    { id: 1, postName: "Amazon" },
-    { id: 2, postName: "Microsoft" },
-    { id: 3, postName: "Walmart" },
-    { id: 4, postName: "Google" },
-    { id: 1, postName: "Apple" },
-  ];
 
   return (
     <Container className="">
