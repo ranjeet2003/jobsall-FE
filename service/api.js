@@ -6,3 +6,6 @@ export const API_GET_PRIVATE_POSTS =
 
 export const API_GET_INTERNSHIP_POSTS =
   "https://jobsall.onrender.com/api/intern/getAlljob";
+
+  export const API_GET_RESULT_POSTS =
+  "https://jobsall.onrender.com/api/result/getAllResult";

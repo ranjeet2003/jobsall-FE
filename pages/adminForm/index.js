@@ -24,7 +24,8 @@ export default function Home() {
     const callApiFor = {
       government: "govt",
       private: "pvt",
-      internship: "intern"
+      internship: "intern",
+      result: "result"
     };
 
     const response = await fetch(
@@ -76,6 +77,7 @@ export default function Home() {
             <option value="private">Private</option>
             <option value="internship">internship</option>
             <option value="freelancing">Freelancing</option>
+            <option value="freelancing">Result</option>
           </select>
         </div>
         <Paper className="form" elevation={1}>
@@ -285,7 +287,7 @@ export default function Home() {
                 </div>
               </>
             )}
-            {formState !== "government" && (
+            {formState !== "government" && formState!="result" && (
               <div className="flexRow">
                 <label>CTC</label>
                 <input
