@@ -7,14 +7,21 @@ import { PostContext } from "../context/PostContext";
 import Loading from "../components/Loading";
 
 export default function Home() {
-  const { governmentData, loading, privateData, internData, resultData, answerKeyData } = useContext(PostContext);
+  const {
+    governmentData,
+    loading,
+    privateData,
+    internData,
+    resultData,
+    answerKeyData,
+  } = useContext(PostContext);
   const router = useRouter();
 
   const firstFiveGovPosts = governmentData.slice(0, 5);
   const firstFivePvtPosts = privateData.slice(0, 5);
   const firstFiveInternPosts = internData.slice(0, 5);
-  const firstFiveResultPosts = resultData.slice(0,5);
-  const firstFiveAnswerKeyPosts = answerKeyData.slice(0,5);
+  const firstFiveResultPosts = resultData.slice(0, 5);
+  const firstFiveAnswerKeyPosts = answerKeyData.slice(0, 5);
 
   const dummyData = [
     { id: 1, postName: "Amazon Hiring for Freelancing Basis" },
@@ -35,9 +42,13 @@ export default function Home() {
     { id: 2, postName: "NVS Class 6th Admission Online Form 2023" },
     { id: 3, postName: "NTA JEE-MAIN Online Form 2023" },
     { id: 4, postName: "SWD UP IAS / PCS Pre 2023 Free Coaching Online Form" },
-    { id: 1, postName: "Allahabad University PG, LLB, Other Course Online Counseling 2022" },
+    {
+      id: 1,
+      postName:
+        "Allahabad University PG, LLB, Other Course Online Counseling 2022",
+    },
   ];
- 
+
   return (
     <Container className="homeContainer">
       <Head>
@@ -61,14 +72,14 @@ export default function Home() {
               <Grid item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/government/")}>
                   <Paper elevation={3} className="homeCategoryBox">
-                      All Government Jobs
+                    All Government Jobs
                   </Paper>
                 </span>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/private/")}>
                   <Paper elevation={3} className="homeCategoryBox">
-                      All Private Jobs
+                    All Private Jobs
                   </Paper>
                 </span>
               </Grid>
@@ -81,7 +92,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <Paper elevation={3} className="homeCategoryBox">
-                  <span>All Freelancing Jobs</span>
+                  <span>Today's Top Clicked</span>
                 </Paper>
               </Grid>
             </Grid>
@@ -111,7 +122,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <JobCards
-                  title="Freelancing Jobs"
+                  title="Today's Top Clicked"
                   allPosts={dummyData}
                   btnRoute="/post/freelancing"
                 />
