@@ -60,7 +60,7 @@ const PostsPage = () => {
               <strong>Download Result</strong>
             </td>
             <td>
-              <a href={post?.applyLink}>Click Here</a>
+              <a href={post?.applyLink}>Click Here To Apply</a>
             </td>
           </tr>
           {post?.ctc ? (

@@ -65,7 +65,7 @@ const PostsPage = () => {
               <strong> Apply link</strong>
             </td>
             <td>
-              <a href={post?.applyLink}>{post?.applyLink}</a>
+              <a href={post?.applyLink}>Click Here To Apply</a>
             </td>
           </tr>
           <tr>

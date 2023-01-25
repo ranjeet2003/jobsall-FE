@@ -6,6 +6,9 @@
   top: 0px;
   background: #39796b;
   z-index: 9;
+  // @media only screen and (max-width: 600px) {
+  //   width: max-content;
+  // }
   .title {
     cursor: pointer;
     font-size: 22px;
