@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 export default function Footer() {
   return (
     <div className="footer-container pa">
@@ -29,28 +29,28 @@ export default function Footer() {
             Follow Us
           </b>
           <span className="df">
-            <Image src="/images/Facebook.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Facebook.png" alt="me" width="20" height="20" /> */}
             <Link href="">Facebook</Link>
           </span>
           <span className="df">
-            <Image
+            {/* <Image
               src="/images/Telegram App.png"
               alt="me"
               width="20"
               height="20"
-            />
+            /> */}
             <Link href="">Telegram</Link>
           </span>
           <span className="df">
-            <Image src="/images/LinkedIn.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/LinkedIn.png" alt="me" width="20" height="20" /> */}
             <Link href="">LinkedIn</Link>
           </span>
           <span className="df">
-            <Image src="/images/Twitter.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Twitter.png" alt="me" width="20" height="20" /> */}
             <Link href="">Twitter</Link>
           </span>
           <span className="df">
-            <Image src="/images/Youtube.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Youtube.png" alt="me" width="20" height="20" /> */}
             <Link href="">Youtube</Link>
           </span>
         </li>
