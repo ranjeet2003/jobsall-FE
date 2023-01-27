@@ -19,7 +19,8 @@ const index = () => {
     <div className="">
       <Head>
         <title>InfoMotive | All Private Posts</title>
-        <meta name="description" content="All Government Posts listing" />
+        <meta name="description" content="All Private Jobs Openings" />
+        <meta name="keywords" content="All latest private jobs, all private jobs jobs, software engineer jobs, manager jobs, engineering jobs, private naukari, private hirings, amazon jobs, good package private jobs" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading ? (
