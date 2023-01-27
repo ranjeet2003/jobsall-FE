@@ -25,7 +25,7 @@ const PostsPage = () => {
 
       <p className="post-descp">{post?.shortInfo}</p>
 
-      <table class="table">
+      <table className="table">
         <tbody>
           <tr>
             <td>
