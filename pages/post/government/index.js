@@ -12,7 +12,8 @@ const index = () => {
     <div className="">
       <Head>
         <title>InfoMotive | All Government Posts</title>
-        <meta name="description" content="All Government Posts listing" />
+        <meta name="description" content="All Government jobs openings" />
+        <meta name="keywords" content="All latest government jobs, all government jobs, sarkari naukari, sarkari naukariya, government naukari" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

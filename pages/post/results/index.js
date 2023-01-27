@@ -19,7 +19,9 @@ const index = () => {
     <div className="">
       <Head>
         <title>InfoMotive | All Govt Exam Results</title>
-        <meta name="description" content="All Government Posts listing" />
+        <meta name="description" content="All Government Exam Result" />
+        <meta name="keywords" content="All latest government jobs results, all government jobs result, sarkari naukari results, sarkari naukariya, government naukari, Latest result" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading ? (

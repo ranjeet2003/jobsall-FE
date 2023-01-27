@@ -12,7 +12,8 @@ const index = () => {
     <div className="">
       <Head>
         <title>InfoMotive | All Answer Keys</title>
-        <meta name="description" content="All Government Posts listing" />
+        <meta name="description" content="Find All Government Answer Keys" />
+        <meta name="keywords" content="All latest government examn answer keys, all answer keys, sarkari exam answer key, 2023 exam answer keys" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
