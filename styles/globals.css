@@ -39,6 +39,9 @@ a:hover {
   color: white;
   cursor: pointer;
 }
+.fut a{
+  color: #39796b;
+}
 /* .fut .tgIcon:hover{
   background: url(../public/images/fut-w.svg);
 } */
