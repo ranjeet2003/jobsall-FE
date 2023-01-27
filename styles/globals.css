@@ -3,7 +3,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,12 +12,33 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #39796b;
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
 }
-.df{
+.df {
   display: flex;
 }
-.fut :hover{
+.fut {
+  border: 2px solid #39796b;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 1px;
+  background: white;
+  color: #39796b;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.fut:hover{
+  background: #39796b;
+  color: white;
   cursor: pointer;
 }
+/* .fut .tgIcon:hover{
+  background: url(../public/images/fut-w.svg);
+} */

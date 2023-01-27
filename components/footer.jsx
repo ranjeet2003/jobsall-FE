@@ -1,22 +1,22 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 export default function Footer() {
   return (
     <div className="footer-container pa">
       <ul>
         <li>
           <b>
-            <Link href="">Quick Job Links </Link>
+            Quick Job Links
           </b>
-          <Link href="">All Government Jobs</Link>
-          <Link href="">All Private Jobs</Link>
-          <Link href="">All Internship Jobs</Link>
+          <Link href="">Government Jobs</Link>
+          <Link href="">Private Jobs</Link>
+          <Link href="">Internship Jobs</Link>
           <Link href="">Today's Top Clicked</Link>
-          <Link href="">All Govt Exam calendar</Link>
+          <Link href="">Govt Exam calendar</Link>
         </li>
         <li>
           <b>
-            <Link href="">Quick Links </Link>
+            Quick Links
           </b>
           <Link href="">Jobs</Link>
           <Link href="">Results</Link>
@@ -26,37 +26,37 @@ export default function Footer() {
         </li>
         <li>
           <b>
-            <Link href="">Follow Us</Link>
+            Follow Us
           </b>
           <span className="df">
-            <Image src="/images/Facebook.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Facebook.png" alt="me" width="20" height="20" /> */}
             <Link href="">Facebook</Link>
           </span>
           <span className="df">
-            <Image
+            {/* <Image
               src="/images/Telegram App.png"
               alt="me"
               width="20"
               height="20"
-            />
+            /> */}
             <Link href="">Telegram</Link>
           </span>
           <span className="df">
-            <Image src="/images/LinkedIn.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/LinkedIn.png" alt="me" width="20" height="20" /> */}
             <Link href="">LinkedIn</Link>
           </span>
           <span className="df">
-            <Image src="/images/Twitter.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Twitter.png" alt="me" width="20" height="20" /> */}
             <Link href="">Twitter</Link>
           </span>
           <span className="df">
-            <Image src="/images/Youtube.png" alt="me" width="20" height="20" />
+            {/* <Image src="/images/Youtube.png" alt="me" width="20" height="20" /> */}
             <Link href="">Youtube</Link>
           </span>
         </li>
         <li>
           <b>
-            <Link href="">More</Link>
+            More
           </b>
           <Link href="">Admissions</Link>
           <Link href="">Importants</Link>
@@ -66,7 +66,7 @@ export default function Footer() {
         </li>
         <li>
           <b>
-            <Link href="">Today's Top Clicked</Link>
+            Today's Top Clicked
           </b>
           <Link href="">UPSE CSE</Link>
           <Link href="">UPPCS</Link>

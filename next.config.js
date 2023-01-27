@@ -3,5 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
-
+module.exports = {
+  assetPrefix: './',
+  
+}
 module.exports = nextConfig

@@ -22,7 +22,7 @@ const PostsPage = () => {
 
       <p className="post-descp">{post?.shortInfo}</p>
 
-      <table class="table">
+      <table className="table">
         <tbody>
           <tr>
             <td>
@@ -52,7 +52,7 @@ const PostsPage = () => {
               <strong> Apply link</strong>
             </td>
             <td>
-              <a href={post?.applyLink}>{post?.applyLink}</a>
+              <a href={post?.applyLink}>Click Here To Apply</a>
             </td>
           </tr>
           <tr>

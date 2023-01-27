@@ -10,10 +10,10 @@ const JobCards = ({ title, allPosts, btnRoute }) => {
   };
   return (
     <Paper elevation={3} className="homeBox">
-      <div class="box third-party">
-        <h2 class="title">{title}</h2>
+      <div className="box third-party">
+        <h2 className="title">{title}</h2>
         <div className="div-2-list">
-          <ul class="box-content">
+          <ul className="box-content">
             {allPosts.map((post, i) => (
               <li key={post._id}>
                 <Link href={`${btnRoute}/${post.descriptionURL}`}>

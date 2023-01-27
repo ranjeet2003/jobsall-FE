@@ -57,6 +57,7 @@ export default function Home() {
           name="description"
           content="One stop solution for all jobs and results notification"
         />
+        <meta name="viewport" content="width=1024"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
