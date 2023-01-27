@@ -9,7 +9,7 @@ const JobCards = ({ title, allPosts, btnRoute }) => {
     sessionStorage.setItem("currentPost", JSON.stringify(post));
   };
   return (
-    <Paper elevation={3} className="homeBox">
+    <div className="homeBox">
       <div className="box third-party">
         <h2 className="title">{title}</h2>
         <div className="div-2-list">
@@ -31,7 +31,7 @@ const JobCards = ({ title, allPosts, btnRoute }) => {
           </div>
         )}
       </div>
-    </Paper>
+    </div>
   );
 };
 

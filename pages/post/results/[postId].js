@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container } from "@mui/material";
+// import { Container } from "@mui/material";
 import FUT from '../../../components/follow-telegram'
 
 
@@ -15,7 +15,7 @@ const PostsPage = () => {
   }, []);
 
   return (
-    <Container className="single-post-wrapper">
+    <div className="single-post-wrapper">
       <Head>
         <title>{post?.postName} </title>
         <meta name="description" content="Private Posts listing" />
@@ -76,7 +76,7 @@ const PostsPage = () => {
         </tbody>
       </table>
       <FUT />
-    </Container>
+    </div>
   );
 };
 

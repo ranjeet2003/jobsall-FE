@@ -14,7 +14,7 @@ const PostsPage = () => {
   }, []);
 
   return (
-    <Container className="single-post-wrapper">
+    <div className="single-post-wrapper">
       <Head>
         <title>{post?.postName} </title>
         <meta name="description" content="Government Post listing" />
@@ -112,7 +112,7 @@ const PostsPage = () => {
         </tbody>
       </table>
       <FUT />
-    </Container>
+    </div>
   );
 };
 

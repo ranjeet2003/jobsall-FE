@@ -1,4 +1,4 @@
-import { Container, Grid, Paper } from "@mui/material";
+// import { Container, Grid, Paper } from "@mui/material";
 import Head from "next/head";
 import { useState, useContext } from "react";
 import JobCards from "../components/JobCards";
@@ -50,7 +50,7 @@ export default function Home() {
   ];
 
   return (
-    <Container className="homeContainer">
+    <div className="homeContainer">
       <Head>
         <title>InfoMotive | HomePage</title>
         <meta
@@ -69,97 +69,97 @@ export default function Home() {
             Welcome! Get updates to all the jobs and result notification here
           </h3>
           <div className="jobCardContainer">
-            <Grid container className="boxesWrapper">
-              <Grid item xs={12} sm={6} lg={3}>
+            <div container className="boxesWrapper">
+              <div item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/government/")}>
-                  <Paper elevation={3} className="homeCategoryBox">
+                  <div className="homeCategoryBox">
                     All Government Jobs
-                  </Paper>
+                  </div>
                 </span>
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/private/")}>
-                  <Paper elevation={3} className="homeCategoryBox">
+                  <div className="homeCategoryBox">
                     All Private Jobs
-                  </Paper>
+                  </div>
                 </span>
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <span onClick={() => router.push("/post/internship/")}>
-                  <Paper elevation={3} className="homeCategoryBox">
+                  <div className="homeCategoryBox">
                     <span>All internships Jobs</span>
-                  </Paper>
+                  </div>
                 </span>
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
-                <Paper elevation={3} className="homeCategoryBox">
+              </div>
+              <div item xs={12} sm={6} lg={3}>
+                <div className="homeCategoryBox">
                   <span>Today's Top Clicked</span>
-                </Paper>
-              </Grid>
-            </Grid>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="jobCardContainer">
-            <Grid container className="boxesWrapper">
-              <Grid item xs={12} sm={6} lg={3}>
+            <div container className="boxesWrapper">
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Government Jobs"
                   allPosts={firstFiveGovPosts}
                   btnRoute="/post/government"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Private Jobs"
                   allPosts={firstFivePvtPosts}
                   btnRoute="/post/private"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Internship Jobs"
                   allPosts={firstFiveInternPosts}
                   btnRoute="/post/internship"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Today's Top Clicked"
                   allPosts={dummyData}
                   btnRoute="/post/freelancing"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Important Links"
                   allPosts={importantLinks}
                   btnRoute="/"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Scholarships"
                   allPosts={scholarships}
                   btnRoute="/"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Results"
                   allPosts={firstFiveResultPosts}
                   btnRoute="/post/results"
                 />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={3}>
+              </div>
+              <div item xs={12} sm={6} lg={3}>
                 <JobCards
                   title="Answer Keys"
                   allPosts={firstFiveAnswerKeyPosts}
                   btnRoute="/post/answerKeys"
                 />
-              </Grid>
-            </Grid>
+              </div>
+            </div>
           </div>
         </main>
       )}
-    </Container>
+    </div>
   );
 }

@@ -16,7 +16,7 @@ const index = () => {
   ];
 
   return (
-    <Container className="">
+    <div className="">
       <Head>
         <title>InfoMotive | All Private Posts</title>
         <meta name="description" content="All Government Posts listing" />
@@ -28,19 +28,19 @@ const index = () => {
         <>
           <h2>All Private Job Postings are here</h2>
           <div className="jobCardContainer">
-            <Grid container className="boxesWrapper">
-              <Grid item xs={12} sm={6}>
+            <div className="boxesWrapper">
+              <div item xs={12} sm={6}>
                 <JobCards
                   title="Private Jobs"
                   allPosts={privateData}
                   btnRoute="/post/private"
                 />
-              </Grid>
-            </Grid>
+              </div>
+            </div>
           </div>
         </>
       )}
-    </Container>
+    </div>
   );
 };
 

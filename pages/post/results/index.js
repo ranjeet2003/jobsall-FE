@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Container, Grid, Paper } from "@mui/material";
+// import { Container, } from "@mui/material";
 import JobCards from "../../../components/JobCards";
 import Head from "next/head";
 import { PostContext } from "../../../context/PostContext";
@@ -16,7 +16,7 @@ const index = () => {
 //   ];
 
   return (
-    <Container className="">
+    <div className="">
       <Head>
         <title>InfoMotive | All Govt Exam Results</title>
         <meta name="description" content="All Government Posts listing" />
@@ -28,19 +28,19 @@ const index = () => {
         <>
           <h2>Get Updated to latest govt exam results</h2>
           <div className="jobCardContainer">
-            <Grid container className="boxesWrapper">
-              <Grid item xs={12} sm={6}>
+            <div className="boxesWrapper">
+              <div>
                 <JobCards
                   title="Latest Results"
                   allPosts={resultData}
                   btnRoute="/post/results"
                 />
-              </Grid>
-            </Grid>
+              </div>
+            </div>
           </div>
         </>
       )}
-    </Container>
+    </div>
   );
 };
 

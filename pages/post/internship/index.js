@@ -9,7 +9,7 @@ import Loading from "../../../components/Loading";
 const index = () => {
   const { internData, loading } = useContext(PostContext);
   return (
-    <Container className="">
+    <div className="">
       <Head>
         <title>InfoMotive | All Internship Posts</title>
         <meta name="description" content="All Government Posts listing" />
@@ -22,19 +22,19 @@ const index = () => {
         <>
           <h3 className="h3AllPosts">All Open internship Jobs Postings are here</h3>
           <div className="jobCardContainer">
-            <Grid container className="boxesWrapper">
-              <Grid item xs={12} sm={6}>
+            <div  className="boxesWrapper">
+              <div item xs={12} sm={6}>
                 <JobCards
                   title="All Internship Jobs"
                   allPosts={internData}
                   btnRoute="/post/internship"
                 />
-              </Grid>
-            </Grid>
+              </div>
+            </div>
           </div>
         </>
       )}
-    </Container>
+    </div>
   );
 };
 
