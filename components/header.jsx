@@ -1,12 +1,11 @@
 import React from "react";
-import { Container } from "@mui/material";
 import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
   return (
     <div className="HeaderContainer">
-      <Container className="headerFlexBox">
+      <div className="headerFlexBox">
         <div className="title" onClick={() => router.push("/")}>
           {/* Job<span className="titleSpan">Dekho</span> */}
           <svg width="160" height="45" viewBox="0 0 234 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +34,7 @@ const Header = () => {
           <li className="item">About</li>
           <li className="item">Contact Us</li>
         </ul>
-      </Container>
+      </div>
     </div>
   );
 };

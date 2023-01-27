@@ -9,7 +9,7 @@ const index = () => {
   const { answerKeyData, loading } = useContext(PostContext);
 
   return (
-    <Container className="">
+    <div className="">
       <Head>
         <title>InfoMotive | All Answer Keys</title>
         <meta name="description" content="All Government Posts listing" />
@@ -19,18 +19,18 @@ const index = () => {
       <>
         <h2>All Government Exam Answer Keys Posted Here</h2>
         <div className="jobCardContainer">
-          <Grid container className="boxesWrapper">
-            <Grid item xs={12} sm={6}>
+          <div  className="boxesWrapper">
+            <div item xs={12} sm={6}>
               <JobCards
                 title="Answer Keys"
                 allPosts={answerKeyData}
                 btnRoute="/post/answerKeys"
               />
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         </div>
       </>
-    </Container>
+    </div>
   );
 };
 
