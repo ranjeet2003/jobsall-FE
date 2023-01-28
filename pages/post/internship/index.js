@@ -12,7 +12,8 @@ const index = () => {
     <Container className="">
       <Head>
         <title>InfoMotive | All Internship Posts</title>
-        <meta name="description" content="All Government Posts listing" />
+        <meta name="description" content="All Internship Openings" />
+        <meta name="keywords" content="All latest internship openings, all internship jobs, internships, private internships,  internship hirings, internship naukari" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

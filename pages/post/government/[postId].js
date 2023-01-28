@@ -18,6 +18,7 @@ const PostsPage = () => {
       <Head>
         <title>{post?.postName} </title>
         <meta name="description" content="Government Post listing" />
+        <meta name="keywords" content={`${post?.postName} Recruitment, ${post?.postName} Online Form, ${post?.postName} Notification, naukarikosh.com, ${post?.postName} Recruitment`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="post-heading">{post?.dispHeading}</h1>

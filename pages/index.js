@@ -55,9 +55,14 @@ export default function Home() {
         <title>InfoMotive | HomePage</title>
         <meta
           name="description"
-          content="One stop solution for all jobs and results notification"
+          content="Get all government, private, internship jobs and more"
         />
-        <meta name="viewport" content="width=1024"></meta>
+        <meta
+          name="keywords"
+          content="Sarkari Exam, government exam, private jobs, latest government exam, internships, scholarships form, software engineering hirings, exam notification, latest sarkari result, Sarkari, Sarkari Naukri, sarkari exam 2023, govt exam result 2023, Sarkari Exam, rojgarkosh.com government exam answer keys"
+        />
+        <meta name="rating" content="general" />
+        <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

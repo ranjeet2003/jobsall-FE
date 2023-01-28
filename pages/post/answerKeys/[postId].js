@@ -18,7 +18,8 @@ const PostsPage = () => {
     <Container className="single-post-wrapper">
       <Head>
         <title>{post?.postName} </title>
-        <meta name="description" content="Private Posts listing" />
+        <meta name="description" content="Find government exam answer keys" />
+        <meta name="keywords" content={`${post?.postName}, ${post?.postName} Answer key, ${post?.postName} answer keys, ${post?.postName} exam's answer key, ${post?.postName} latest answer key, naukarikosh.com`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="post-heading">{post?.dispHeading}</h1>
