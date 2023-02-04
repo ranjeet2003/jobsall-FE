@@ -84,7 +84,7 @@ export default function Home() {
             <option value="answerkey">Answer Key</option>
           </select>
         </div>
-        <Paper className="form" elevation={1}>
+        <Paper className="form" elevation={8}>
           <form className="postForm" onSubmit={handleSubmit}>
             <div className="flexRow">
               <label>
@@ -431,7 +431,7 @@ export default function Home() {
             )}
             <br />
             <div className="alignBtnCenter">
-              <input className="btn-submit" type="submit" placeholder="submit" />
+              <Button variant="contained" className="btn-submit" type="submit" placeholder="submit">SUBMIT</Button>
             </div>
           </form>
         </Paper>

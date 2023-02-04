@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="/post/government">Government Jobs</Link>
           <Link href="/post/private">Private Jobs</Link>
           <Link href="/post/internship">Internship Jobs</Link>
-          <Link href="">Today's Top Clicked</Link>
+          <Link href="#">Today's Top Clicked</Link>
           <Link href="https://ssc.nic.in/SSCFileServer/PortalManagement/UploadedFiles/Tentative_Calendar_30122022.pdf">SSC Exam calendar</Link>
         </li>
         <li>
@@ -60,10 +60,10 @@ export default function Footer() {
             More
           </b>
           <Link href="#">Admissions</Link>
-          <Link href="#">Importants</Link>
           <Link href="#">important Links</Link>
           <Link href="#">Certificate Downloads</Link>
-          <Link href="#">Scholarships</Link>
+          <Link href="/AboutUS">About Us</Link>
+          <Link href="TermsAndCondition">Terms and Condition</Link>
         </li>
         <li>
           <b>
