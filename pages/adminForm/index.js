@@ -3,6 +3,8 @@ import axios from "axios";
 import Head from "next/head";
 import { useState } from "react";
 import { callPostAPIs } from "../../helper/helper";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 export default function Home() {
   const [input, setInput] = useState({});
@@ -26,7 +28,7 @@ export default function Home() {
       private: "pvt",
       internship: "intern",
       result: "result",
-      answerkey: "answerkey"
+      answerkey: "answerkey",
     };
 
     const response = await fetch(
@@ -85,89 +87,153 @@ export default function Home() {
         <Paper className="form" elevation={1}>
           <form className="postForm" onSubmit={handleSubmit}>
             <div className="flexRow">
-              <label>Post name</label>
-              <input
+              <label>
+                <b>
+                  <b>Post name: </b>
+                </b>
+              </label>
+              <TextField
+                label="Post Name"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Post name"
                 name="postName"
               />
 
-              <label>Post Date</label>
-              <input onChange={handleChange} type="date" name="postDate" />
+              <label>
+                <b>Post Date: </b>
+              </label>
+              <TextField
+                label="Post Date"
+                size="small"
+                onChange={handleChange}
+                name="postDate"
+              />
 
-              <label>Exam date</label>
-              <input onChange={handleChange} type="date" name="examDate" />
+              <label>
+                <b>Exam date: </b>
+              </label>
+              <TextField
+                TextField
+                label="Exam date"
+                size="small"
+                onChange={handleChange}
+                name="examDate"
+              />
 
-              <label>Last Date</label>
-              <input onChange={handleChange} type="date" name="lastDate" />
+              <label>
+                <b>Last Date: </b>
+              </label>
+              <TextField
+                label="Last Date"
+                size="small"
+                onChange={handleChange}
+                name="lastDate"
+              />
             </div>
             <div className="flexRow">
-              <label>Total Post</label>
-              <input
+              <label>
+                <b>Total Post: </b>
+              </label>
+              <TextField
+                label="Total Post"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter total posts"
-                type="number"
                 name="totalPost"
               />
 
-              <label>Eligibility</label>
-              <input
+              <label>
+                <b>Eligibility: </b>
+              </label>
+              <TextField
+                label="Eligibility"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Eligibility"
                 name="eligibility"
               />
 
-              <label>Apply Link</label>
-              <input
+              <label>
+                <b>Apply Link: </b>
+              </label>
+              <TextField
+                label="Apply Link"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Apply Link"
                 name="applyLink"
               />
             </div>
             <div className="flexRow">
-              <label>Notification Link</label>
-              <input
+              <label>
+                <b>Notification Link: </b>
+              </label>
+              <TextField
+                label="Notification Link"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Notification Link"
                 name="notificationLink"
               />
-              <label>Official Website Link</label>
-              <input
+              <label>
+                <b>Official Website Link: </b>
+              </label>
+              <TextField
+                label="Official Website Link"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Official Website Link"
                 name="officialWebsiteLink"
               />
 
-              <label>Description URL</label>
-              <input
+              <label>
+                <b>Description URL:</b>
+              </label>
+              <TextField
+                label="Description URL"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Description URL"
                 name="descriptionURL"
               />
             </div>
             <div className="flexRow">
-              <label>Display Heading</label>
-              <input
+              <label>
+                <b>Display Heading: </b>
+              </label>
+              <TextField
+                label="Display Heading"
+                size="small"
                 onChange={handleChange}
                 placeholder="Enter Display Heading"
                 name="dispHeading"
               />
-              <label>PostName Short Detail</label>
-              <input
+              <label>
+                <b>PostName Short Detail: </b>
+              </label>
+              <TextField
+                label="PostName Short Detail:"
+                size="small"
                 onChange={handleChange}
                 placeholder="PostName Short Detail"
                 name="postNameShortDtl"
               />
-              <label>Admit card available date</label>
-              <input
+              <label>
+                <b>Admit card available date: </b>
+              </label>
+              <TextField
+                label="Admit card available date"
+                size="small"
                 onChange={handleChange}
                 placeholder="Admit card available date"
                 name="admitCardAvlbl"
-                type="date"
               />
             </div>
             <div className="flexRow">
-              <label>Short Infomation</label>
+              <label>
+                <b>Short Infomation:</b>
+              </label>
 
               <textarea
                 placeholder="Enter Job Info"
@@ -176,7 +242,9 @@ export default function Home() {
                 name="shortInfo"
                 onChange={handleChange}
               />
-              <label>Position Description</label>
+              <label>
+                <b>Position Description: </b>
+              </label>
 
               <textarea
                 placeholder="Enter Position Description"
@@ -187,7 +255,9 @@ export default function Home() {
               />
             </div>
             <div className="flexRow">
-              <label>Key Skills</label>
+              <label>
+                <b>Key Skills:</b>
+              </label>
 
               <textarea
                 placeholder="Enter Key Skills"
@@ -196,7 +266,9 @@ export default function Home() {
                 name="skills"
                 onChange={handleChange}
               />
-              <label>Eligibility Criteria</label>
+              <label>
+                <b>Eligibility Criteria:</b>
+              </label>
 
               <textarea
                 placeholder="Enter Eligibility/Apply Criteria"
@@ -209,79 +281,113 @@ export default function Home() {
             {formState === "government" && (
               <>
                 <div className="">
-                  <label>Enter Fee for all categories</label>
-                  <input
+                  <label>
+                    <b>Enter Fee for all categories:</b>
+                  </label>
+                  <TextField
+                    label="General Fee"
+                    size="small"
                     onChange={handleChange}
                     placeholder="General Fees"
                     name="generalFee"
                   />
-                  <input
+                  <TextField
+                    label="OBC Fees"
+                    size="small"
                     onChange={handleChange}
                     placeholder="OBC Fees"
                     name="obcFee"
                   />
-                  <input
+                  <TextField
+                    label="SC Fee"
+                    size="small"
                     onChange={handleChange}
                     placeholder="SC Fees"
                     name="scFee"
                   />
-                  <input
+                  <TextField
+                    label="ST Fee"
+                    size="small"
                     onChange={handleChange}
                     placeholder="ST Fees"
                     name="stFee"
                   />
-                  <input
+                  <TextField
+                    label="Female Fee"
+                    size="small"
                     onChange={handleChange}
                     placeholder="Female Fees"
                     name="femaleFee"
                   />
                 </div>
                 <div className="flexRow">
-                  <label>Age Details</label>
-                  <input
+                  <label>
+                    <b>Age Details: </b>
+                  </label>
+                  <TextField
+                    label="Min Age"
+                    size="small"
                     onChange={handleChange}
                     placeholder="Enter min age"
                     name="minAge"
                   />
-                  <input
+                  <TextField
+                    label="Max Age"
+                    size="small"
                     onChange={handleChange}
                     placeholder="Enter max age"
                     name="maxAge"
                   />
                 </div>
                 <div className="">
-                  <label>Categories wise posts</label>
-                  <input
+                  <label>
+                    <b>Categories wise posts: </b>
+                  </label>
+                  <TextField
+                    label="U.R. Posts"
+                    size="small"
                     onChange={handleChange}
                     placeholder="UR Posts"
                     name="URPosts"
                   />
-                  <input
+                  <TextField
+                    label="B.C. Posts"
+                    size="small"
                     onChange={handleChange}
                     placeholder="BC Posts"
                     name="BCPosts"
                   />
-                  <input
+                  <TextField
+                    label="MBC Post"
+                    size="small"
                     onChange={handleChange}
                     placeholder="MBC Posts"
                     name="MBCPosts"
                   />
-                  <input
+                  <TextField
+                    label="EWS Post"
+                    size="small"
                     onChange={handleChange}
                     placeholder="EWS Posts"
                     name="EWSPosts"
                   />
-                  <input
+                  <TextField
+                    label="SC Posts"
+                    size="small"
                     onChange={handleChange}
                     placeholder="SC Posts"
                     name="SCPosts"
                   />
-                  <input
+                  <TextField
+                    label="ST Fee"
+                    size="small"
                     onChange={handleChange}
                     placeholder="ST Posts"
                     name="STPosts"
                   />
-                  <input
+                  <TextField
+                    label="Total Post"
+                    size="small"
                     onChange={handleChange}
                     placeholder="Total Posts"
                     name="totalPosts"
@@ -289,22 +395,34 @@ export default function Home() {
                 </div>
               </>
             )}
-            {formState !== "government" && formState!="result" && (
+            {formState !== "government" && formState != "result" && (
               <div className="flexRow">
-                <label>CTC</label>
-                <input
+                <label>
+                  <b>CTC: </b>
+                </label>
+                <TextField
+                  label="CTC"
+                  size="small"
                   onChange={handleChange}
                   placeholder="Enter CTC"
                   name="ctc"
                 />
-                <label>Hourly Pay</label>
-                <input
+                <label>
+                  <b>Hourly Pay: </b>
+                </label>
+                <TextField
+                  label="Hourly Pay"
+                  size="small"
                   onChange={handleChange}
                   placeholder="Enter Hourly Pay"
                   name="hourlyPay"
                 />
-                <label>Location</label>
-                <input
+                <label>
+                  <b>Location: </b>
+                </label>
+                <TextField
+                  label="Location"
+                  size="small"
                   onChange={handleChange}
                   placeholder="Enter Locations"
                   name="location"
@@ -313,7 +431,7 @@ export default function Home() {
             )}
             <br />
             <div className="alignBtnCenter">
-              <input className="btnOrange" type="submit" placeholder="submit" />
+              <input className="btn-submit" type="submit" placeholder="submit" />
             </div>
           </form>
         </Paper>
