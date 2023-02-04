@@ -5,6 +5,7 @@ import "../styles/AdminForm.scss";
 import "../styles/singlePost.scss";
 import "../styles/loader.scss";
 import "../styles/Footer.scss";
+import "../styles/ContactUs.scss";
 import Layout from "../components/layout";
 import Context from "../context/PostContext";
 import Head from "next/head";

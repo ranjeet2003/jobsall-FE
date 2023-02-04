@@ -14,7 +14,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #39796b;
+  /* color: #39796b; */
   font-weight: 700;
 }
 
@@ -39,6 +39,61 @@ a:hover {
   color: white;
   cursor: pointer;
 }
+.dn {
+  display: none;
+}
+.ml5{
+  margin-left: 5px;
+}
+/* svg:hover {
+  fill: white;
+} */
+svg:hover {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 /* .fut .tgIcon:hover{
   background: url(../public/images/fut-w.svg);
 } */
+.aic {
+  align-items: center;
+}
+.tac{
+  text-align: center;
+}
