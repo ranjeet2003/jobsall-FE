@@ -84,9 +84,10 @@ export default function Home() {
             <option value="answerkey">Answer Key</option>
           </select>
         </div>
-        <Paper className="form" elevation={1}>
+        <Paper className="form" elevation={8}>
           <form className="postForm" onSubmit={handleSubmit}>
-            <div className="flexRow">
+            <div className="flexRow jcsb">
+              <div className="df aic">
               <label>
                 <b>
                   <b>Post name: </b>
@@ -99,7 +100,8 @@ export default function Home() {
                 placeholder="Enter Post name"
                 name="postName"
               />
-
+              </div>
+              <div className="df aic">
               <label>
                 <b>Post Date: </b>
               </label>
@@ -109,7 +111,9 @@ export default function Home() {
                 onChange={handleChange}
                 name="postDate"
               />
-
+              </div>
+              </div>
+              <div className="flexRow">
               <label>
                 <b>Exam date: </b>
               </label>
@@ -153,7 +157,8 @@ export default function Home() {
                 placeholder="Enter Eligibility"
                 name="eligibility"
               />
-
+              </div>
+              <div className="flexRow">
               <label>
                 <b>Apply Link: </b>
               </label>
@@ -186,7 +191,8 @@ export default function Home() {
                 placeholder="Enter Official Website Link"
                 name="officialWebsiteLink"
               />
-
+              </div>
+              <div className="flexRow">
               <label>
                 <b>Description URL:</b>
               </label>
@@ -197,7 +203,6 @@ export default function Home() {
                 placeholder="Enter Description URL"
                 name="descriptionURL"
               />
-            </div>
             <div className="flexRow">
               <label>
                 <b>Display Heading: </b>
@@ -209,6 +214,7 @@ export default function Home() {
                 placeholder="Enter Display Heading"
                 name="dispHeading"
               />
+              </div>
               <label>
                 <b>PostName Short Detail: </b>
               </label>
@@ -431,7 +437,7 @@ export default function Home() {
             )}
             <br />
             <div className="alignBtnCenter">
-              <input className="btn-submit" type="submit" placeholder="submit" />
+              <Button variant="contained" className="btn-submit" type="submit" placeholder="submit">SUBMIT</Button>
             </div>
           </form>
         </Paper>

@@ -6,6 +6,8 @@ import "../styles/singlePost.scss";
 import "../styles/loader.scss";
 import "../styles/Footer.scss";
 import "../styles/ContactUs.scss";
+import "../styles/AboutUs.scss";
+import "../styles/Tnc.scss";
 import Layout from "../components/layout";
 import Context from "../context/PostContext";
 import Head from "next/head";
