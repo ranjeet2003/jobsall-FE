@@ -21,13 +21,16 @@ export default function ContactUS() {
       </div>
       <div className="right-side">
         <div className="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+        <p>If you have any work from me or any types of quries related to naukarikosh, you can send me message from here. It's my pleasure to help you.</p>
       <form action="#">
         <div className="input-box">
           <input type="text" placeholder="Enter your name" />
         </div>
         <div className="input-box">
           <input type="text" placeholder="Enter your email" />
+        </div>
+        <div className="input-box">
+          <textarea  placeholder="Enter your message" ></textarea>
         </div>
         {/* <div className="input-box message-box">
           

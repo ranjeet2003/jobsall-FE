@@ -48,9 +48,8 @@ a:hover {
 /* svg:hover {
   fill: white;
 } */
-svg:hover {
-  -ms-transform: rotate(180deg); /* IE 9 */
-  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+
+.drp180 {
   transform: rotate(180deg);
   transition: transform 0.2s ease-in-out;
 }
@@ -96,4 +95,7 @@ svg:hover {
 }
 .tac{
   text-align: center;
+}
+.ma {
+  margin: auto;
 }

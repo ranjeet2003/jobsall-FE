@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import { Container } from "@mui/material";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 const Header = () => {
+  const [DrpPos, setDrpPos] = useState('');
   const router = useRouter();
   return (
     <div className="HeaderContainer">
@@ -30,10 +31,10 @@ const Header = () => {
           <Image src="/images/logo.svg" width="190" height="40" />
         </div>
         <ul className="navItems">
-          <div className="dropdown">
+          <div className="dropdown" onMouseOver={()=>{setDrpPos('drp180')}} onMouseLeave={()=>{setDrpPos('')}}>
             <li className="item">
               Jobs
-              <svg width="10" height="6" className="ml5">
+              <svg width="10" height="6" className={`${DrpPos} ml15`}>
                 <use href="#arrSvg"></use>
               </svg>
               <div className="dropdown-content">
