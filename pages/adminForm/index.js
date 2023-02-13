@@ -69,7 +69,7 @@ export default function Home() {
       <main className="mainWrapper">
         <div className="flexSpaceBtw">
           <p>
-            Welcome! Get updates to all the jobs and result notification here
+            Post a new Job from here
           </p>
           <select
             id="jobType"
@@ -88,215 +88,239 @@ export default function Home() {
           <form className="postForm" onSubmit={handleSubmit}>
             <div className="flexRow jcsb">
               <div className="df aic">
-              <label>
-                <b>
-                  <b>Post name: </b>
-                </b>
-              </label>
-              <TextField
-                label="Post Name"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Post name"
-                name="postName"
-              />
+                <label className="mr10">
+                  <b>Post name:</b>
+                </label>
+                <TextField
+                  label="Post Name"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Post name"
+                  name="postName"
+                />
               </div>
               <div className="df aic">
-              <label>
-                <b>Post Date: </b>
-              </label>
-              <TextField
-                label="Post Date"
-                size="small"
-                onChange={handleChange}
-                name="postDate"
-              />
+                <label className="mr10">
+                  <b>Post Date: </b>
+                </label>
+                <TextField
+                  label="Post Date"
+                  size="small"
+                  onChange={handleChange}
+                  name="postDate"
+                />
               </div>
-              </div>
-              <div className="flexRow">
-              <label>
-                <b>Exam date: </b>
-              </label>
-              <TextField
-                TextField
-                label="Exam date"
-                size="small"
-                onChange={handleChange}
-                name="examDate"
-              />
-
-              <label>
-                <b>Last Date: </b>
-              </label>
-              <TextField
-                label="Last Date"
-                size="small"
-                onChange={handleChange}
-                name="lastDate"
-              />
             </div>
-            <div className="flexRow">
-              <label>
-                <b>Total Post: </b>
-              </label>
-              <TextField
-                label="Total Post"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter total posts"
-                name="totalPost"
-              />
-
-              <label>
-                <b>Eligibility: </b>
-              </label>
-              <TextField
-                label="Eligibility"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Eligibility"
-                name="eligibility"
-              />
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Exam date: </b>
+                </label>
+                <TextField
+                  TextField
+                  label="Exam date"
+                  size="small"
+                  onChange={handleChange}
+                  name="examDate"
+                />
               </div>
-              <div className="flexRow">
-              <label>
-                <b>Apply Link: </b>
-              </label>
-              <TextField
-                label="Apply Link"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Apply Link"
-                name="applyLink"
-              />
-            </div>
-            <div className="flexRow">
-              <label>
-                <b>Notification Link: </b>
-              </label>
-              <TextField
-                label="Notification Link"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Notification Link"
-                name="notificationLink"
-              />
-              <label>
-                <b>Official Website Link: </b>
-              </label>
-              <TextField
-                label="Official Website Link"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Official Website Link"
-                name="officialWebsiteLink"
-              />
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Last Date: </b>
+                </label>
+                <TextField
+                  label="Last Date"
+                  size="small"
+                  onChange={handleChange}
+                  name="lastDate"
+                />
               </div>
-              <div className="flexRow">
-              <label>
-                <b>Description URL:</b>
-              </label>
-              <TextField
-                label="Description URL"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Description URL"
-                name="descriptionURL"
-              />
-            <div className="flexRow">
-              <label>
-                <b>Display Heading: </b>
-              </label>
-              <TextField
-                label="Display Heading"
-                size="small"
-                onChange={handleChange}
-                placeholder="Enter Display Heading"
-                name="dispHeading"
-              />
+            </div>
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Total Post: </b>
+                </label>
+                <TextField
+                  label="Total Post"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter total posts"
+                  name="totalPost"
+                />
               </div>
-              <label>
-                <b>PostName Short Detail: </b>
-              </label>
-              <TextField
-                label="PostName Short Detail:"
-                size="small"
-                onChange={handleChange}
-                placeholder="PostName Short Detail"
-                name="postNameShortDtl"
-              />
-              <label>
-                <b>Admit card available date: </b>
-              </label>
-              <TextField
-                label="Admit card available date"
-                size="small"
-                onChange={handleChange}
-                placeholder="Admit card available date"
-                name="admitCardAvlbl"
-              />
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Eligibility: </b>
+                </label>
+                <TextField
+                  label="Eligibility"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Eligibility"
+                  name="eligibility"
+                />
+              </div>
             </div>
-            <div className="flexRow">
-              <label>
-                <b>Short Infomation:</b>
-              </label>
-
-              <textarea
-                placeholder="Enter Job Info"
-                rows="4"
-                cols="50"
-                name="shortInfo"
-                onChange={handleChange}
-              />
-              <label>
-                <b>Position Description: </b>
-              </label>
-
-              <textarea
-                placeholder="Enter Position Description"
-                rows="4"
-                cols="50"
-                name="postDescription"
-                onChange={handleChange}
-              />
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Apply Link: </b>
+                </label>
+                <TextField
+                  label="Apply Link"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Apply Link"
+                  name="applyLink"
+                />
+              </div>
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Notification Link: </b>
+                </label>
+                <TextField
+                  label="Notification Link"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Notification Link"
+                  name="notificationLink"
+                />
+              </div>
             </div>
-            <div className="flexRow">
-              <label>
-                <b>Key Skills:</b>
-              </label>
-
-              <textarea
-                placeholder="Enter Key Skills"
-                rows="4"
-                cols="50"
-                name="skills"
-                onChange={handleChange}
-              />
-              <label>
-                <b>Eligibility Criteria:</b>
-              </label>
-
-              <textarea
-                placeholder="Enter Eligibility/Apply Criteria"
-                rows="4"
-                cols="50"
-                name="applyCriteria"
-                onChange={handleChange}
-              />
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Official Website Link: </b>
+                </label>
+                <TextField
+                  label="Official Website Link"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Official Website Link"
+                  name="officialWebsiteLink"
+                />
+              </div>
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Description URL:</b>
+                </label>
+                <TextField
+                  label="Description URL"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Description URL"
+                  name="descriptionURL"
+                />
+              </div>
+            </div>
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Display Heading: </b>
+                </label>
+                <TextField
+                  label="Display Heading"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Enter Display Heading"
+                  name="dispHeading"
+                />
+              </div>
+              <div className="df aic">
+                <label className="mr10">
+                  <b>PostName Short Detail: </b>
+                </label>
+                <TextField
+                  label="PostName Short Detail:"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="PostName Short Detail"
+                  name="postNameShortDtl"
+                />
+              </div>
+            </div>
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Admit card available date: </b>
+                </label>
+                <TextField
+                  label="Admit card available date"
+                  size="small"
+                  onChange={handleChange}
+                  placeholder="Admit card available date"
+                  name="admitCardAvlbl"
+                />
+              </div>
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Short Infomation:</b>
+                </label>
+                <textarea
+                  placeholder="Enter Job Info"
+                  rows="4"
+                  cols="50"
+                  name="shortInfo"
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Position Description: </b>
+                </label>
+                <textarea
+                  placeholder="Enter Position Description"
+                  rows="4"
+                  cols="50"
+                  name="postDescription"
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Key Skills:</b>
+                </label>
+                <textarea
+                  placeholder="Enter Key Skills"
+                  rows="4"
+                  cols="50"
+                  name="skills"
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="flexRow jcsb">
+              <div className="df aic">
+                <label className="mr10">
+                  <b>Eligibility Criteria:</b>
+                </label>
+                <textarea
+                  placeholder="Enter Eligibility/Apply Criteria"
+                  rows="4"
+                  cols="50"
+                  name="applyCriteria"
+                  onChange={handleChange}
+                />
+              </div>
             </div>
             {formState === "government" && (
               <>
-                <div className="">
-                  <label>
-                    <b>Enter Fee for all categories:</b>
-                  </label>
-                  <TextField
-                    label="General Fee"
-                    size="small"
-                    onChange={handleChange}
-                    placeholder="General Fees"
-                    name="generalFee"
-                  />
+                <div className="flexRow jcsb">
+                  <div className="df aic">
+                    <label>
+                      <b>Fee</b>
+                    </label>
+                    <TextField
+                      label="General Fee"
+                      size="small"
+                      onChange={handleChange}
+                      placeholder="General Fees"
+                      name="generalFee"
+                    />
+                  </div>
                   <TextField
                     label="OBC Fees"
                     size="small"
@@ -326,17 +350,19 @@ export default function Home() {
                     name="femaleFee"
                   />
                 </div>
-                <div className="flexRow">
-                  <label>
-                    <b>Age Details: </b>
-                  </label>
-                  <TextField
-                    label="Min Age"
-                    size="small"
-                    onChange={handleChange}
-                    placeholder="Enter min age"
-                    name="minAge"
-                  />
+                <div className="flexRow jcsb">
+                  <div className="df aic">
+                    <label className="mr10">
+                      <b>Age Details: </b>
+                    </label>
+                    <TextField
+                      label="Min Age"
+                      size="small"
+                      onChange={handleChange}
+                      placeholder="Enter min age"
+                      name="minAge"
+                    />
+                  </div>
                   <TextField
                     label="Max Age"
                     size="small"
@@ -345,8 +371,8 @@ export default function Home() {
                     name="maxAge"
                   />
                 </div>
-                <div className="">
-                  <label>
+                <div className="flexRow jcsb">
+                  <label className="mr10">
                     <b>Categories wise posts: </b>
                   </label>
                   <TextField
@@ -437,7 +463,14 @@ export default function Home() {
             )}
             <br />
             <div className="alignBtnCenter">
-              <Button variant="contained" className="btn-submit" type="submit" placeholder="submit">SUBMIT</Button>
+              <Button
+                variant="contained"
+                className="btn-submit"
+                type="submit"
+                placeholder="submit"
+              >
+                SUBMIT
+              </Button>
             </div>
           </form>
         </Paper>
