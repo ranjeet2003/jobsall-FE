@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image'
 export default function AboutUS() {
   return (
     <>
@@ -13,7 +12,7 @@ export default function AboutUS() {
 <div className="row">
   <div className="column-abt">
     <div className="card">
-      <Image src="/images/team1.jpg" alt="Jane" width="100%" height="100%" />
+      <img src="/images/team1.jpg" alt="Jane" width="100%" height="100%" />
       <div className="container-abt">
         <h2>Jane Doe</h2>
         <p className="title">CEO & Founder</p>
@@ -26,7 +25,7 @@ export default function AboutUS() {
 
   <div className="column-abt">
     <div className="card">
-      <Image src="/images/team2.jpg" alt="Mike" width="100%" height="100%" />
+      <img src="/images/team2.jpg" alt="Mike" width="100%" height="100%" />
       <div className="container-abt">
         <h2>Mike Ross</h2>
         <p className="title">Art Director</p>
@@ -39,7 +38,7 @@ export default function AboutUS() {
 
   <div className="column-abt">
     <div className="card">
-      <Image src="/images/team3.jpg" alt="John" width="100%" height="100%" />
+      <img src="/images/team3.jpg" alt="John" width="100%" height="100%" />
       <div className="container-abt">
         <h2>John Doe</h2>
         <p className="title">Designer</p>
